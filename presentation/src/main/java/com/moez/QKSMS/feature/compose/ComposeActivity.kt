@@ -537,7 +537,7 @@ class ComposeActivity : QkThemedActivity(), ComposeView {
 
         // show either send, audio msg record, or sendScheduled button
         send.visibility = if (state.canSend && !state.loading && state.scheduled == 0L) View.VISIBLE else View.INVISIBLE
-        recordAudioMsg.visibility = if (state.canSend && !state.loading) View.INVISIBLE else View.VISIBLE
+        recordAudioMsg.visibility = if (state.canSend && !state.loading && !prefs.showRecordAudioMsg.get()) View.INVISIBLE else View.VISIBLE
         scheduledSend.visibility = if (state.canSend && (state.scheduled != 0L) && !state.loading) View.VISIBLE else View.INVISIBLE
 
         // if not in editing mode, and there are no non-me participants that can be sent to,
