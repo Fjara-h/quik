@@ -108,6 +108,14 @@
             app:title="@string/settings_system_show_stt_title"
             app:widget="@layout/settings_switch_widget" />
 
+        <dev.octoshrimpy.quik.common.widget.PreferenceView
+            android:id="@+id/showRecordAudioMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@android:drawable/ic_btn_speak_now"
+            app:title="@string/settings_system_show_record_audio_message_title"
+            app:widget="@layout/settings_switch_widget" />
+      
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
