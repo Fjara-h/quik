@@ -254,7 +254,12 @@
     <string name="scheduled_send_cd">Schedule this message</string>
     <string name="scheduled_options_title">Scheduled message</string>
     <string name="attachment_missing">Missing</string>
-
+    <string-array name="scheduled_options">
+        <item>Send immediately</item>
+        <item>Copy text</item>
+        <item>Delete</item>
+    </string-array>
+  
     <string name="settings_category_appearance">Appearance</string>
     <string name="settings_category_general">General</string>
     <string name="settings_category_qkreply">QK Reply</string>
