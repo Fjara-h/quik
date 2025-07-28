@@ -42,6 +42,7 @@ data class SettingsState(
     val showStt: Boolean = true,
     val showSttOffsetX: Float = Float.MIN_VALUE,
     val showSttOffsetY: Float = Float.MAX_VALUE,
+    val showRecordAudioMsg: Boolean = true,
     val splitSmsEnabled: Boolean = false,
     val stripUnicodeEnabled: Boolean = false,
     val mobileOnly: Boolean = false,
