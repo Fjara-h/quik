@@ -268,7 +268,6 @@
     <string name="settings_text_size_title">Font size</string>
     <string name="settings_system_font_title">Use system font</string>
     <string name="settings_system_show_stt_title">Show the speech-to-text button</string>
-    <string name="settings_system_show_voice_message_title">Show the voice message button</string>
     <string name="settings_auto_emoji_title">Automatic emoji</string>
     <string name="settings_notifications_title">Notifications</string>
     <string name="settings_notifications_o_summary">Tap to customize</string>
