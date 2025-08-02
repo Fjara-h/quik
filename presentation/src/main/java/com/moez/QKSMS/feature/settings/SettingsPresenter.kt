@@ -118,9 +118,6 @@ class SettingsPresenter @Inject constructor(
         disposables += prefs.showStt.asObservable()
             .subscribe { enabled -> newState { copy(showStt = enabled) } }
 
-        disposables += prefs.showRecordAudioMsg.asObservable()
-            .subscribe { enabled -> newState { copy(showRecordAudioMsg = enabled) } }
-
         disposables += prefs.unicode.asObservable()
                 .subscribe { enabled -> newState { copy(stripUnicodeEnabled = enabled) } }
 
@@ -210,14 +207,12 @@ class SettingsPresenter @Inject constructor(
                         }
 
                         R.id.systemFont -> prefs.systemFont.set(!prefs.systemFont.get())
-                        
+
                         R.id.showStt -> {
                             prefs.showStt.set(!prefs.showStt.get())
                             prefs.showSttOffsetX.set(Float.MIN_VALUE)
                             prefs.showSttOffsetY.set(Float.MIN_VALUE)
                         }
-
-                        R.id.showRecordAudioMsg -> prefs.showRecordAudioMsg.set(!prefs.showRecordAudioMsg.get())
 
                         R.id.unicode -> prefs.unicode.set(!prefs.unicode.get())
 
