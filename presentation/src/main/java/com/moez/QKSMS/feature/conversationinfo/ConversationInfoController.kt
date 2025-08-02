@@ -102,7 +102,6 @@ class ConversationInfoController(
     override fun nameClicks(): Observable<*> = adapter.nameClicks
     override fun nameChanges(): Observable<String> = nameChangeSubject
     override fun notificationClicks(): Observable<*> = adapter.notificationClicks
-    override fun markUnreadClicks(): Observable<*> = adapter.markUnreadClicks
     override fun archiveClicks(): Observable<*> = adapter.archiveClicks
     override fun blockClicks(): Observable<*> = adapter.blockClicks
     override fun deleteClicks(): Observable<*> = adapter.deleteClicks
@@ -133,4 +132,5 @@ class ConversationInfoController(
                 .setNegativeButton(R.string.button_cancel, null)
                 .show()
     }
+
 }
