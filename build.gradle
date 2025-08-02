@@ -46,6 +46,7 @@ buildscript {
             url 'https://oss.sonatype.org/content/repositories/snapshots'
         }
         mavenCentral()
+        jcenter()
     }
 
     dependencies {
@@ -71,7 +72,7 @@ allprojects {
     }
 }
 
-tasks.register('clean', Delete) {
+task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
